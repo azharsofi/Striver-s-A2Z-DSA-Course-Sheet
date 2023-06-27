@@ -1,4 +1,4 @@
-
+// approach 1
 	int print2largest(int a[], int n) {
 	    // code here
 	   int max=a[0];
@@ -15,5 +15,25 @@
 	       }
 	   }
 	   return max2;
+	}
+};
+// approach 2
+class Solution{
+public:	
+	// Function returns the second
+	// largest elements
+	
+
+	int print2largest(int a[], int n) {
+	    // code here
+	  sort(a,a+n);
+	  int largest=a[n-1];
+	  for(int i=n-2;i>=0;i--){
+	      if(a[i]!=largest)
+	      {
+	          return a[i];
+	      }
+	  }
+	  return -1;
 	}
 };
