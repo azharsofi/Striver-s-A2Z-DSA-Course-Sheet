@@ -1,3 +1,5 @@
+
+//brute force approach 
 class Solution {
     private:
     int height(Node* root){
